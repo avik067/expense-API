@@ -7,9 +7,10 @@ POST http://localhost:4000/expense
 Content-Type: application/json
 
 {
-    "name": "Delhi_flight",
-    "category" : "Travel" ,
-    "amount" : 7634,
+    "name": "Weekend-tour",
+    "date_of_expense":new Date("2021-01-15") ,
+    "category" : "food" ,
+    "amount" : 4000,
     "created_by" : "me"
 }
  
