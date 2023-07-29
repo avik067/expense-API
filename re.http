@@ -8,7 +8,7 @@ Content-Type: application/json
 
 {
     "name": "Weekend-tour",
-    "date_of_expense":new Date("2021-01-15") ,
+    "date_of_expense":"2023-07-27T19:02:28.925Z" ,
     "category" : "food" ,
     "amount" : 4000,
     "created_by" : "me"
@@ -20,17 +20,20 @@ GET http://localhost:4000/expenses
 ### 
 
 
-GET http://localhost:4000/expense/Delhi_flight
+GET http://localhost:4000/expense/shopping
 
 ### 
 
 
-PUT http://localhost:4000/expense/64ae59544910a1fa52ed22c6/
+PUT http://localhost:4000/expense/64c2bf44f0d225be0c42db71/
 Content-Type: application/json
 
 {
-    "name" : "Dubai_Flight" ,
-    "amount" : 12000
+    "name": "Weekend",
+    "date_of_expense":"2023-07-27T19:02:28.925Z" ,
+    "category" : "food" ,
+    "amount" : 4000,
+    "created_by" : "me"
 }
 
 ###

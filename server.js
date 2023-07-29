@@ -92,7 +92,8 @@ app.delete("/expense/:id/" , async(req,res) => {
   app.get("/expense/:name" , async(req,res) => {
     try {
         const {name} = req.params;
-       const exp = await Expense.find({'name':name}) ;  
+        const regName = new RegExp(name,'i')
+       const exp = await Expense.find({"name":regName}) ;  
        res.status(200).json(exp)
     }catch(err) {
         console.log(err)
